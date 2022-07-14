@@ -1,0 +1,8 @@
+services:
+  php:
+    image: cakephpserver1
+    container_name: mycakeapp-webserver1
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www/html/
